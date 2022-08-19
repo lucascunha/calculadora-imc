@@ -1,0 +1,57 @@
+@media only screen and (max-width: 768px) {
+    div.container {
+        width: 90%;
+    }
+
+    div.container h1:first-child {
+        width: calc(100% + 20px);
+    }    
+}
+
+@media only screen and (min-width: 769px) {
+    div.container {
+        width: 400px;
+    }
+
+    div.container h1:first-child {
+        width: calc(400px + 20px);
+    }    
+}
+
+div.container {
+    border: 1px solid #000;
+    min-height: 100px;
+    margin: 40px auto;
+}
+
+div.container-content {
+    padding: 10px;
+}
+
+div.actions {
+    margin: 0px 10px 10px 10px;
+    min-height: 20px;
+}
+
+div.actions button {
+    float: right;
+}
+
+div.container h1:first-child {
+    background-color: #990000;
+    font-size: 1.2em;
+    text-align: center;
+    color: #fff;
+    left: -10px;
+    position: relative;
+}
+
+div.container h1::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -10px;
+    border: solid;
+    border-width: 5px;
+    border-color: transparent #7c0000 #7c0000 transparent;
+}
